@@ -1,0 +1,157 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* outline:1px red solid; */
+}
+
+/* :root{
+    --color1:black;
+    --number1: 20px;
+    --number2: 30px;
+} */
+
+
+.friendPic{
+    /* width:calc(var(--number1) + var(--number2)); */
+    width:60px;
+    margin:0px 10px 0px 0px;
+    border-radius: 50%;
+}
+
+button{
+    border-radius: 20px;
+    width: 150px;
+}
+
+.justEven{
+    justify-content: space-between;
+}
+
+/* .addButt{
+    justify-content: flex-end;
+} */
+
+.blkBack{
+    background-color: black;
+    color:white;
+}
+
+.whtBack{
+    background-color: white;
+}
+
+.flex{
+    display:flex;
+}
+
+.alignCen{
+    align-items: center;
+}
+
+.icon{
+    width: 20px;
+    padding: 0px 5px;
+}
+
+.container{
+    background-color: aquamarine;
+}
+
+.navBar{
+    /* width:100%; */
+    height:50px;
+    justify-content: space-between;
+    color:red;
+    padding: 0 18%;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display:inline-block;
+    padding:10px;
+}
+
+h1{
+    color:white;
+    padding: 20px;
+}
+
+h2{
+    padding:10px 0px 10px 10px;
+}
+
+h3{
+    padding:5px 0px;
+}
+
+p{
+    padding: 5px 0px;
+}
+
+button{
+    height: 50px;
+}
+
+.main{
+    margin:auto;
+    /* background-color: cornsilk; */
+    width:70%;
+    height:600px;
+}
+
+.col1{
+    flex:3;
+    /* background-color: navy; */
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    /* padding:20px; */
+    /* background-color: white; */
+}
+
+.info{
+    /* flex:4; */
+    background: rgb(9,9,121);
+    background: linear-gradient(180deg, rgba(9,9,121,1) 18%, rgba(2,0,36,1) 28%, rgba(255,255,255,1) 40%);
+    padding:20px;
+    margin:20px 0px;
+}
+
+.mainpic{
+    width:120px;
+    padding: 60px 0px 0px;
+}
+
+.edu{
+    /* flex:2; */
+    /* padding:0px 0px 0px 20px; */
+    background-color: transparent;
+}
+
+.edu>h2, .edu>div{
+    padding: 0px 0px 0px 20px;
+}
+
+.col2{
+    /* flex:2; */
+    flex-direction: column;
+
+}
+
+.req{
+    /* flex:2; */
+    padding:20px;
+    
+}
+
+.connect{
+    /* flex:3; */
+    padding:20px;
+}
+
+.addIcon{
+    width:40px;
+}
