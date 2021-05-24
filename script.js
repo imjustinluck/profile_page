@@ -1,21 +1,3 @@
-// console.log("Hello World")
-
-// for (var i = 0; i < 10; i++) {
-//     console.log(i)
-// }
-
-// function signOutMsg() {
-//     alert("Are you super duper sure you want to leave?")
-// }
-
-// function chargeCard(){
-//     // Get Element from HTML
-//     var myElem = document.querySelector(".payMan")
-//     // Console.log element
-//     console.log(myElem);
-//     myElem.style.display = "none";
-// }
-
 function edit(str) {
     let newName = prompt("What's your name?")
     if (newName != ""){
@@ -37,3 +19,22 @@ function decreasing(){
     let decVal = parseInt(document.querySelector("#dec").innerText)
     document.querySelector("#dec").innerText = decVal - 1
 }
+
+// Notes
+// console.log("Hello World")
+
+// for (var i = 0; i < 10; i++) {
+//     console.log(i)
+// }
+
+// function signOutMsg() {
+//     alert("Are you super duper sure you want to leave?")
+// }
+
+// function chargeCard(){
+//     // Get Element from HTML
+//     var myElem = document.querySelector(".payMan")
+//     // Console.log element
+//     console.log(myElem);
+//     myElem.style.display = "none";
+// }
