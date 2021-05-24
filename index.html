@@ -20,13 +20,13 @@
                     <li>Find Connections</li>
                 </ul>
             </div>
-            <button>Sign Out</button>
+            <button onclick="signOutMsg()">Sign Out</button>
         </div>
         <div class="main flex">
             <div class="col1 flex">
                 <div class="info">
                     <img class="mainpic" src="/justin.png" alt="justin">
-                    <h2>Justin Aguilo</h2>
+                    <h2 id="name">Justin Aguilo</h2>
                     <div class="map flex alignCen">
                         <img class="icon" src="/map-marker.png" alt="map">
                         <h3>Los Angeles</h3>
@@ -35,7 +35,7 @@
                     <p>Best Friend of Lebron James and Company.</p>
                     <div class="gear flex alignCen">
                         <img class="icon" src="/gear.png" alt="gear">
-                        <a href="">edit profile</a>
+                        <button onclick="edit('#name')">edit profile</button>
                     </div>
                 </div>
                 <div class="edu">
@@ -49,26 +49,32 @@
             </div>
             <div class="col2 flex">
                 <div class="req">
-                    <h2 class="blkBack">Connection Requests</h2>
-                    <div class="whtBack friends flex alignCen justEven">
+                    <div class="blkBack flex alignCen">
+                        <button id="dec">2</button>
+                         <h2 >Connection Requests</h2>
+                    </div>
+                    <div id="req1" class="whtBack friends flex alignCen justEven">
                         <img class="friendPic" src="/lebron.png" alt="lebron">
                         <h3>Lebron James</h3>
                         <div class="addButt">
-                            <img class="addIcon" src="/accept-circle.png" alt="yes">
-                            <img class="addIcon" src="/close-circle.png" alt="no">
+                            <img class="addIcon" onclick="disapp('#req1');increasing()" src="/accept-circle.png" alt="yes">
+                            <img class="addIcon" onclick="disapp('#req1');decreasing()" src="/close-circle.png" alt="no">
                         </div>
                     </div>
-                    <div class="whtBack friends flex alignCen justEven">
+                    <div id="req2" class="whtBack friends flex alignCen justEven">
                         <img class="friendPic" src="/shaq.jpg" alt="shaq">
                         <h3>Shaq O'Neal</h3>
                         <div class="addButt">
-                            <img class="addIcon" src="/accept-circle.png" alt="yes">
-                            <img class="addIcon" src="/close-circle.png" alt="no">
+                            <img class="addIcon" onclick="disapp('#req2');increasing()" src="/accept-circle.png" alt="yes">
+                            <img class="addIcon" onclick="disapp('#req2');decreasing()" src="/close-circle.png" alt="no">
                         </div>
                     </div>
                 </div>  
                 <div class="connect">
-                    <h2 class="blkBack">Your Connections</h2>
+                        <div class="blkBack flex alignCen">
+                        <button id = "inc">23</button>
+                        <h2>Your Connections</h2>
+                        </div>
                     <div class="whtBack friends flex alignCen">
                         <img class="friendPic" src="/jared.png" alt="dudz">
                         <h3>Jared Dudley</h3>
@@ -91,6 +97,11 @@
             </div>
         </div>
     </div>
+    <!-- <div class="payMan">
+        <h1>To Continue Pay MONEY!!!</h1>
+        <button onclick="chargeCard()">HERE</button>
+    </div> -->
+    <script src="script.js"></script>
 </body>
 
 </html>
